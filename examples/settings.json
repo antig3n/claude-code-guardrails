@@ -1,0 +1,33 @@
+{
+  "hooks": {
+    "SessionStart": [{
+      "hooks": [{
+        "type": "command",
+        "command": "python3 -B \"$CLAUDE_PROJECT_DIR/hook.py\" session_resume --config \"$CLAUDE_PROJECT_DIR/examples/session_resume.json\"",
+        "timeout": 2
+      }]
+    }],
+    "UserPromptSubmit": [{
+      "hooks": [{
+        "type": "command",
+        "command": "python3 -B \"$CLAUDE_PROJECT_DIR/hook.py\" prompt_context --config \"$CLAUDE_PROJECT_DIR/examples/prompt_context.json\"",
+        "timeout": 2
+      }]
+    }],
+    "PreToolUse": [{
+      "matcher": "Agent",
+      "hooks": [{
+        "type": "command",
+        "command": "python3 -B \"$CLAUDE_PROJECT_DIR/hook.py\" agent_guard --config \"$CLAUDE_PROJECT_DIR/examples/agent_guard.json\"",
+        "timeout": 2
+      }]
+    }],
+    "Stop": [{
+      "hooks": [{
+        "type": "command",
+        "command": "python3 -B \"$CLAUDE_PROJECT_DIR/hook.py\" stop_guard --config \"$CLAUDE_PROJECT_DIR/examples/stop_guard.json\"",
+        "timeout": 2
+      }]
+    }]
+  }
+}

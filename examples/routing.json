@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "summarize": ["local_model", "budget_executor", "strong_model"],
+    "implement": ["budget_executor", "strong_model"],
+    "design": ["strong_model"]
+  },
+  "threshold": 90,
+  "thresholds": {"local_model": 95, "budget_executor": 85}
+}

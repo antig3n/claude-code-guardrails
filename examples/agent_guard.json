@@ -1,0 +1,11 @@
+{
+  "justification_prefix": "Why not the cheaper executor:",
+  "min_justification_chars": 12,
+  "exceptions": ["reader"],
+  "forbidden_models": {
+    "builder": ["economy-model"],
+    "*": ["retired-model"]
+  },
+  "usage_file": "examples/project/usage.json",
+  "usage_threshold": 90
+}

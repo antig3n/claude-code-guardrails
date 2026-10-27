@@ -1,0 +1,2 @@
+Fictional project: the example parser is ready for review.
+Next step: add a small regression case for empty input.

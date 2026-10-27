@@ -1,0 +1,11 @@
+{
+  "tasks": [
+    {"id": "DEMO-1", "title": "Review the example parser", "status": "in_progress"},
+    {
+      "id": "DEMO-2",
+      "title": "Write an example specification",
+      "status": "done",
+      "evidence": {"file": "examples/project/proof.txt"}
+    }
+  ]
+}

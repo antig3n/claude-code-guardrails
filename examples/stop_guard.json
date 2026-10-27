@@ -1,0 +1,5 @@
+{
+  "tasks_file": "examples/project/tasks.json",
+  "state_dir": ".guardrails",
+  "max_blocks": 2
+}

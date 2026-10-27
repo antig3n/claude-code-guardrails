@@ -1,0 +1,11 @@
+[project]
+name = "claude-code-guardrails"
+version = "0.1.0"
+description = "Small local hooks with bounded execution and explicit policies"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--basetemp=.test-tmp -p no:cacheprovider"

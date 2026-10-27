@@ -1,0 +1,7 @@
+{
+  "usage_file": "examples/project/usage.json",
+  "tasks_file": "examples/project/tasks.json",
+  "state_dir": ".guardrails",
+  "max_chars": 800,
+  "max_tasks": 3
+}
